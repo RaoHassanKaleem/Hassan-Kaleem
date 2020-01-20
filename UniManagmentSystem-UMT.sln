@@ -1,9 +1,7 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniManagmentSystem-UMT", "UniManagmentSystem-UMT\UniManagmentSystem-UMT.csproj", "{A46507E0-D352-4696-8FFB-22D39D5CF7DC}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniManagmentSystem-UMT", "UniManagmentSystem-UMT.csproj", "{A46507E0-D352-4696-8FFB-22D39D5CF7DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +13,5 @@ Global
 		{A46507E0-D352-4696-8FFB-22D39D5CF7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A46507E0-D352-4696-8FFB-22D39D5CF7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A46507E0-D352-4696-8FFB-22D39D5CF7DC}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A46507E0-D352-4696-8FFB-22D39D5CF7DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniManagmentSystem_UMT</RootNamespace>
+    <AssemblyName>UniManagmentSystem-UMT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Web.WebPages.Deployment" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Form.Designer.cs">
+      <DependentUpon>Account_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminastrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminastrator.Designer.cs">
+      <DependentUpon>Adminastrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\ApplicationEntity.cs" />
+    <Compile Include="Clases\Date_sheet.cs" />
+    <Compile Include="Clases\Modules.cs" />
+    <Compile Include="Clases\Person.cs" />
+    <Compile Include="Clases\Resultt.cs" />
+    <Compile Include="Clases\Role.cs" />
+    <Compile Include="Clases\RoleModule.cs" />
+    <Compile Include="Clases\Room.cs" />
+    <Compile Include="Clases\Salary.cs" />
+    <Compile Include="Clases\Student.cs" />
+    <Compile Include="Clases\SystemUser.cs" />
+    <Compile Include="Clases\UserRole.cs" />
+    <Compile Include="datesheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datesheet.Designer.cs">
+      <DependentUpon>datesheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datesheet_entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datesheet_entry.Designer.cs">
+      <DependentUpon>datesheet_entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty.Designer.cs">
+      <DependentUpon>Faculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facultydetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facultydetails.Designer.cs">
+      <DependentUpon>facultydetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyLogin.Designer.cs">
+      <DependentUpon>FacultyLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParent.Designer.cs">
+      <DependentUpon>frmParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ConverListToDT.cs" />
+    <Compile Include="Helper\UniqeId.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marksentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marksentry.Designer.cs">
+      <DependentUpon>marksentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleDetailFrm.Designer.cs">
+      <DependentUpon>ModuleDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleFrm.Designer.cs">
+      <DependentUpon>ModuleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleDetailFrm.Designer.cs">
+      <DependentUpon>RoleDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleFrm.Designer.cs">
+      <DependentUpon>RoleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDetailFrm.Designer.cs">
+      <DependentUpon>StudentDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentPortal.Designer.cs">
+      <DependentUpon>StudentPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsFrm.Designer.cs">
+      <DependentUpon>StudentsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemUserDetailFrm - Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemUserDetailFrm - Copy.Designer.cs">
+      <DependentUpon>SystemUserDetailFrm - Copy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemUserFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemUserFrm.Designer.cs">
+      <DependentUpon>SystemUserFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account_Form.resx">
+      <DependentUpon>Account_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminastrator.resx">
+      <DependentUpon>Adminastrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datesheet.resx">
+      <DependentUpon>datesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datesheet_entry.resx">
+      <DependentUpon>datesheet_entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty.resx">
+      <DependentUpon>Faculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facultydetails.resx">
+      <DependentUpon>facultydetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyLogin.resx">
+      <DependentUpon>FacultyLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marksentry.resx">
+      <DependentUpon>marksentry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleDetailFrm.resx">
+      <DependentUpon>ModuleDetailFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleFrm.resx">
+      <DependentUpon>ModuleFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleDetailFrm.resx">
+      <DependentUpon>RoleDetailFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleFrm.resx">
+      <DependentUpon>RoleFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentDetailFrm.resx">
+      <DependentUpon>StudentDetailFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentPortal.resx">
+      <DependentUpon>StudentPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsFrm.resx">
+      <DependentUpon>StudentsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemUserDetailFrm - Copy.resx">
+      <DependentUpon>SystemUserDetailFrm - Copy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemUserFrm.resx">
+      <DependentUpon>SystemUserFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
